@@ -1,4 +1,4 @@
 #!/bin/bash
 
 
-uwsgi --socket 0.0.0.0:8000 --protocol=http -w wsgi
+uwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi
