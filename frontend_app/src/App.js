@@ -43,25 +43,23 @@ class App extends Component {
         <div className="row">
           <div className="col-12">
             <br/>
-            <div class="form-group">
-              <textarea class="form-control" id="exampleTextarea"  value={ this.state.text } onChange={this.handleChangeText} cols="80" rows="3"></textarea>
+            <div className="form-group">
+              <textarea className="form-control" id="exampleTextarea"  value={ this.state.text } onChange={this.handleChangeText} cols="80" rows="3"></textarea>
             </div>
           </div>
         </div>
         <div className="row">
-          <div class="form-group row">
-            <label for="example-text-input" class="col-2 col-form-label">Text</label>
-            <div class="col-10">
-              <input class="form-control" value={ this.state.sub_text } onChange={this.handleChangeSubtext} id="example-text-input" type="text"/>
+          <div className="form-group row">
+            <label htmlFor="subtext" className="col-2 col-form-label">Text</label>
+            <div className="col-10">
+              <input className="form-control" value={ this.state.sub_text } onChange={this.handleChangeSubtext} id="subtext" type="text"/>
             </div>
           </div>
         </div>
         <div className="row">
-          <button type="button" onClick={() => this.parse()} class="btn">Basic</button>
+          <button type="button" onClick={() => this.parse()} className="btn">Basic</button>
         </div>
-        
       </div>
-      
     )
   }
 }
