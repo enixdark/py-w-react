@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/enixdark/py-w-react.svg?branch=master)](https://travis-ci.org/enixdark/py-w-react)
