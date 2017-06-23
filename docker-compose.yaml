@@ -1,0 +1,25 @@
+version: '3'
+services:
+  backend_app:
+    container_name: backend_app
+    build: ./backend_app
+    command: ./run.sh
+    ports:
+      - "5000:5000"
+    healthcheck:
+      disable: true
+    # environment:
+  frontend_app:
+    container_name: frontend_app
+    build: ./frontend_app
+    command: npm start
+    ports:
+      - "3000:3000"
+    healthcheck:
+      disable: true
+    environment:
+      - SERVICE_URI=http://backend_app:5000
+    links:
+      - "backend_app:backend_app"
+    depends_on:
+      - backend_app

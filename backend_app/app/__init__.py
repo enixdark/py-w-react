@@ -3,7 +3,7 @@ from flask import Flask
 from flask_script import Manager
 # from flask_debugtoolbar import DebugToolbarExtension
 from flask_restful import Api
-
+from flask_cors import CORS
 
 #
 application = Flask(__name__)
@@ -19,6 +19,9 @@ from api.util_service import UtilService
 
 # register script command
 manager = Manager(application)
+
+# enable cors 
+CORS(application)
 
 # wrap to api
 api = Api(application)

@@ -1,3 +1,5 @@
 Flask==0.11.1
 Flask-Script==2.0.5
 Flask-RESTful==0.3.5
+Flask_Cors==3.0.2
+uWSGI==2.0.12
